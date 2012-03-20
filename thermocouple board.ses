@@ -1,0 +1,405 @@
+
+(session "thermocouple board.ses"
+  (base_design "thermocouple board.dsn")
+  (placement
+    (resolution mil 10)
+    (component PIN_ARRAY_2X1
+      (place JP1 18750 -12000 front 0)
+    )
+    (component SM0603
+      (place C1 25000 -14500 front 0)
+      (place C3 25000 -13000 front 180)
+      (place C2 24000 -13750 front 270)
+      (place C5 19500 -17000 front 0)
+      (place C4 16500 -12250 front 0)
+    )
+    (component SM1206
+      (place R2 25000 -15500 front 0)
+      (place R3 25000 -12000 front 0)
+      (place R1 25000 -17000 front 180)
+    )
+    (component "PCC-SMP"
+      (place P1 27500 -14500 front 0)
+    )
+    (component "DIP-14__300"
+      (place IC1 19250 -14500 front 180)
+    )
+    (component "SIL-4"
+      (place P2 13000 -14250 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution mil 10)
+    (parser
+      (host_cad "Kicad's PCBNEW")
+      (host_version "(20100221 RC4)-RC4")
+    )
+    (library_out 
+      (padstack "Via[0-1]_35:25_mil"
+        (shape
+          (circle Front 350 0 0)
+        )
+        (shape
+          (circle Back 350 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_35:0_mil"
+        (shape
+          (circle Front 350 0 0)
+        )
+        (shape
+          (circle Back 350 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "/-VCC"
+        (wire
+          (path Front 150
+            15897 -12750
+            16000 -12750
+            16250 -13000
+          )
+        )
+        (wire
+          (path Front 150
+            13000 -12750
+            15897 -12750
+          )
+        )
+        (wire
+          (path Front 150
+            15897 -12750
+            15897 -12250
+          )
+        )
+        (wire
+          (path Front 150
+            16200 -12250
+            15897 -12250
+          )
+        )
+        (wire
+          (path Front 150
+            16200 -12250
+            16200 -11847
+          )
+        )
+        (wire
+          (path Front 150
+            18250 -12000
+            17772 -12000
+          )
+        )
+        (wire
+          (path Front 150
+            16200 -11847
+            17619 -11847
+            17772 -12000
+          )
+        )
+      )
+      (net /GND
+        (wire
+          (path Back 150
+            19250 -13000
+            21250 -15000
+            21250 -16000
+          )
+        )
+        (wire
+          (path Front 150
+            25300 -14500
+            25300 -14903
+          )
+        )
+        (wire
+          (path Front 150
+            24111 -17000
+            25139 -15972
+            25139 -14946
+            25182 -14903
+            25300 -14903
+          )
+        )
+        (wire
+          (path Front 150
+            24111 -17000
+            23872 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            24350 -17000
+            24111 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            21250 -16601
+            20502 -16601
+            20103 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            21250 -16000
+            21250 -16601
+          )
+        )
+        (wire
+          (path Front 150
+            21250 -16601
+            23473 -16601
+            23872 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            19800 -17000
+            20103 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            18750 -12500
+            17353 -12500
+            17103 -12250
+          )
+        )
+        (wire
+          (path Front 150
+            19250 -13000
+            18750 -12500
+          )
+        )
+        (wire
+          (path Front 150
+            19250 -12000
+            18750 -12500
+          )
+        )
+        (wire
+          (path Front 150
+            16800 -12250
+            17103 -12250
+          )
+        )
+        (wire
+          (path Front 150
+            16800 -12250
+            16800 -12653
+          )
+        )
+        (wire
+          (path Front 150
+            13000 -13750
+            16661 -13750
+            16704 -13707
+            16704 -12749
+            16800 -12653
+          )
+        )
+        (wire
+          (path Front 150
+            25300 -13000
+            25300 -14500
+          )
+        )
+      )
+      (net /IN+
+        (wire
+          (path Front 150
+            23910 -13056
+            24000 -13147
+          )
+        )
+        (wire
+          (path Front 150
+            22250 -13000
+            23853 -13000
+            23910 -13056
+          )
+        )
+        (wire
+          (path Front 150
+            24369 -12597
+            23910 -13056
+          )
+        )
+        (wire
+          (path Front 150
+            24369 -12597
+            24700 -12597
+          )
+        )
+        (wire
+          (path Front 150
+            24350 -12578
+            24369 -12597
+          )
+        )
+        (wire
+          (path Front 150
+            24700 -13000
+            24700 -12597
+          )
+        )
+        (wire
+          (path Front 150
+            24350 -12000
+            24350 -12578
+          )
+        )
+        (wire
+          (path Front 150
+            24000 -13450
+            24000 -13147
+          )
+        )
+      )
+      (net "/IN-"
+        (wire
+          (path Front 150
+            24272 -14625
+            24000 -14353
+          )
+        )
+        (wire
+          (path Front 150
+            24111 -15500
+            24272 -15339
+            24272 -14625
+          )
+        )
+        (wire
+          (path Front 150
+            24397 -14500
+            24272 -14625
+          )
+        )
+        (wire
+          (path Front 150
+            24700 -14500
+            24397 -14500
+          )
+        )
+        (wire
+          (path Front 150
+            24000 -14050
+            24000 -14353
+          )
+        )
+        (wire
+          (path Front 150
+            24111 -15500
+            23872 -15500
+          )
+        )
+        (wire
+          (path Front 150
+            24350 -15500
+            24111 -15500
+          )
+        )
+        (wire
+          (path Front 150
+            22250 -16000
+            23372 -16000
+            23872 -15500
+          )
+        )
+      )
+      (net /OUT
+        (wire
+          (path Front 150
+            17250 -16000
+            16250 -16000
+          )
+        )
+        (wire
+          (path Back 150
+            13000 -14750
+            15000 -14750
+            16250 -16000
+          )
+        )
+      )
+      (net /VCC
+        (wire
+          (path Front 150
+            13000 -15750
+            13453 -15750
+          )
+        )
+        (wire
+          (path Front 150
+            13453 -15750
+            14703 -17000
+            19200 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            19200 -17000
+            19200 -16597
+          )
+        )
+        (wire
+          (path Front 150
+            19250 -16000
+            19250 -16547
+            19200 -16597
+          )
+        )
+      )
+      (net "N-000001"
+        (wire
+          (path Front 150
+            25889 -17000
+            25650 -16761
+            25650 -15500
+          )
+        )
+        (wire
+          (path Front 150
+            25889 -17000
+            26128 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            25650 -17000
+            25889 -17000
+          )
+        )
+        (wire
+          (path Front 150
+            27500 -17200
+            26328 -17200
+            26128 -17000
+          )
+        )
+      )
+      (net "N-000012"
+        (wire
+          (path Front 150
+            25650 -12000
+            26128 -12000
+          )
+        )
+        (wire
+          (path Front 150
+            27500 -11800
+            26328 -11800
+            26128 -12000
+          )
+        )
+      )
+    )
+  )
+)

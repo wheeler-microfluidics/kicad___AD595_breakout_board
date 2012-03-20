@@ -1,0 +1,219 @@
+(pcb "C:\Users\ryan\Documents\My Dropbox\dev\kicad\sensors\AD595 thermocouple board\thermocouple board.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "Kicad's PCBNEW")
+    (host_version "(20100221 RC4)-RC4")
+  )
+  (resolution mil 10)
+  (unit mil)
+  (structure
+    (layer Front
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer Back
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  1225 -1875  3400 -1875  3400 -1025  3400 -1025  1225 -1025)
+    )
+    (via "Via[0-1]_35:25_mil" "Via[0-1]_35:0_mil")
+    (rule
+      (width 15)
+      (clearance 10.1)
+      (clearance 10.1 (type default_smd))
+      (clearance 2.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component PIN_ARRAY_2X1
+      (place JP1 1875 -1200 front 0 (PN JUMPER))
+    )
+    (component SM0603
+      (place C1 2500 -1450 front 0 (PN 0.1uF))
+      (place C3 2500 -1300 front 180 (PN 0.1uF))
+      (place C2 2400 -1375 front 270 (PN 1uF))
+      (place C5 1950 -1700 front 0 (PN 0.1uF))
+      (place C4 1650 -1225 front 0 (PN 0.1uF))
+    )
+    (component SM1206
+      (place R2 2500 -1550 front 0 (PN 1k))
+      (place R3 2500 -1200 front 0 (PN 1k))
+      (place R1 2500 -1700 front 180 (PN 1Meg))
+    )
+    (component "PCC-SMP"
+      (place P1 2750 -1450 front 0 (PN "PCC-SMP"))
+    )
+    (component "DIP-14__300"
+      (place IC1 1925 -1450 front 180 (PN AD595))
+    )
+    (component "SIL-4"
+      (place P2 1300 -1425 front 90 (PN CONN_4))
+    )
+  )
+  (library
+    (image PIN_ARRAY_2X1
+      (outline (path signal 6  -100 -50  -100 50))
+      (outline (path signal 6  -100 50  100 50))
+      (outline (path signal 6  100 50  100 -50))
+      (outline (path signal 6  100 -50  -100 -50))
+      (pin Rect[A]Pad_60x60_mil 1 -50 0)
+      (pin Round[A]Pad_60_mil 2 50 0)
+    )
+    (image SM0603
+      (outline (path signal 5  -45 25  45 25))
+      (outline (path signal 5  45 25  45 -25))
+      (outline (path signal 5  45 -25  -45 -25))
+      (outline (path signal 5  -45 -25  -45 25))
+      (pin Rect[T]Pad_25x45_mil 1 -30 0)
+      (pin Rect[T]Pad_25x45_mil 2 30 0)
+    )
+    (image SM1206
+      (outline (path signal 5  -100 45  -100 -45))
+      (outline (path signal 5  -100 -45  -35 -45))
+      (outline (path signal 5  35 45  100 45))
+      (outline (path signal 5  100 45  100 -45))
+      (outline (path signal 5  100 -45  35 -45))
+      (outline (path signal 5  -35 45  -100 45))
+      (pin Rect[T]Pad_60x80_mil 1 -65 0)
+      (pin Rect[T]Pad_60x80_mil 2 65 0)
+    )
+    (image "PCC-SMP"
+      (outline (path signal 15  -100 310  -100 -310))
+      (outline (path signal 15  -100 0  140 0))
+      (outline (path signal 15  -100 -310  140 -310))
+      (outline (path signal 15  -100 310  140 310))
+      (outline (path signal 15  140 310  140 -310))
+      (outline (path signal 15  720 310  720 -310))
+      (outline (path signal 15  140 -310  720 -310))
+      (outline (path signal 15  140 310  720 310))
+      (pin Round[A]Pad_150_mil @1 530 -310)
+      (pin Round[A]Pad_150_mil @2 530 310)
+      (pin Round[A]Pad_150_mil 2 0 -270)
+      (pin Round[A]Pad_150_mil 1 0 270)
+    )
+    (image "DIP-14__300"
+      (outline (path signal 15  -400 100  400 100))
+      (outline (path signal 15  400 -100  -400 -100))
+      (outline (path signal 15  -400 -100  -400 100))
+      (outline (path signal 15  -400 50  -350 50))
+      (outline (path signal 15  -350 50  -350 -50))
+      (outline (path signal 15  -350 -50  -400 -50))
+      (outline (path signal 15  400 100  400 -100))
+      (pin Rect[A]Pad_55x55_mil 1 -300 -150)
+      (pin Round[A]Pad_55_mil 2 -200 -150)
+      (pin Round[A]Pad_55_mil 3 -100 -150)
+      (pin Round[A]Pad_55_mil 4 0 -150)
+      (pin Round[A]Pad_55_mil 5 100 -150)
+      (pin Round[A]Pad_55_mil 6 200 -150)
+      (pin Round[A]Pad_55_mil 7 300 -150)
+      (pin Round[A]Pad_55_mil 8 300 150)
+      (pin Round[A]Pad_55_mil 9 200 150)
+      (pin Round[A]Pad_55_mil 10 100 150)
+      (pin Round[A]Pad_55_mil 11 0 150)
+      (pin Round[A]Pad_55_mil 12 -100 150)
+      (pin Round[A]Pad_55_mil 13 -200 150)
+      (pin Round[A]Pad_55_mil 14 -300 150)
+    )
+    (image "SIL-4"
+      (outline (path signal 12  -200 50  -200 50))
+      (outline (path signal 12  -200 -50  -200 50))
+      (outline (path signal 12  -200 50  -200 50))
+      (outline (path signal 12  -200 50  200 50))
+      (outline (path signal 12  200 50  200 -50))
+      (outline (path signal 12  200 -50  -200 -50))
+      (outline (path signal 12  -100 -50  -100 50))
+      (pin Rect[A]Pad_55x55_mil 1 -150 0)
+      (pin Round[A]Pad_55_mil 2 -50 0)
+      (pin Round[A]Pad_55_mil 3 50 0)
+      (pin Round[A]Pad_55_mil 4 150 0)
+    )
+    (padstack Round[A]Pad_150_mil
+      (shape (circle Front 150))
+      (shape (circle Back 150))
+      (attach off)
+    )
+    (padstack Round[A]Pad_55_mil
+      (shape (circle Front 55))
+      (shape (circle Back 55))
+      (attach off)
+    )
+    (padstack Round[A]Pad_60_mil
+      (shape (circle Front 60))
+      (shape (circle Back 60))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_25x45_mil
+      (shape (rect Front -12.5 -22.5 12.5 22.5))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_55x55_mil
+      (shape (rect Front -27.5 -27.5 27.5 27.5))
+      (shape (rect Back -27.5 -27.5 27.5 27.5))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_60x60_mil
+      (shape (rect Front -30 -30 30 30))
+      (shape (rect Back -30 -30 30 30))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_60x80_mil
+      (shape (rect Front -30 -40 30 40))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:25_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:0_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+  )
+  (network
+    (net "/-VCC"
+      (pins JP1-1 C4-1 IC1-7 P2-4)
+    )
+    (net /GND
+      (pins JP1-2 C1-2 C3-1 C5-2 C4-2 R1-2 IC1-4 IC1-13 P2-3)
+    )
+    (net /IN+
+      (pins C3-2 C2-1 R3-1 IC1-1)
+    )
+    (net "/IN-"
+      (pins C1-1 C2-2 R2-1 IC1-14)
+    )
+    (net /OUT
+      (pins IC1-8 IC1-9 P2-2)
+    )
+    (net /VCC
+      (pins C5-1 IC1-11 P2-1)
+    )
+    (net "N-000001"
+      (pins R2-2 R1-1 P1-2)
+    )
+    (net "N-000012"
+      (pins R3-2 P1-1)
+    )
+    (class kicad_default "" "/-VCC" /GND /IN+ "/IN-" /OUT /VCC "N-000001"
+      "N-000012"
+      (circuit
+        (use_via Via[0-1]_35:25_mil)
+      )
+      (rule
+        (width 15)
+        (clearance 10.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
